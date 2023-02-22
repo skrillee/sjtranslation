@@ -7,4 +7,5 @@ app_name = 'wechat'
 
 urlpatterns = [
     url(r'^v1/translation/$', views.Translation.as_view()),
+    url(r'^v1/translation/xml$', views.TranslationXml.as_view()),
 ]

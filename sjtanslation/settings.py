@@ -69,6 +69,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sjtanslation.wsgi.application'
 UPLOAD_ROOT = os.path.join(BASE_DIR, 'upload')
+UPLOAD_ROOT_XML = os.path.join(BASE_DIR, 'upload_xml')
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
