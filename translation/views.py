@@ -200,3 +200,6 @@ class TranslationXml(APIView):
             responses['code'] = 3002
             responses['message'] = "请求异常"
         return JsonResponse(responses)
+
+    def get(self, request):
+        return render(request, 'index.html')
