@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>uploadFile</title>
+    </head>
+    <body>
+        <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+            <label> sheet 名称 </label>
+            <input name="sheet_name">
+            <label> 语言(C,D,E,F,G,H,I,J,K,L,M,N) </label>
+            <input name="language">
+            <br/>
+           <label> 上传excel文件 </label>
+            <input type="file" name="excel_file" />
+            <br/>
+            <label> 上传xml文件 </label>
+           <input type="file" name="xml_file" />
+           <br/>
+            <br/>
+           <input type="submit" value="upload"/>
+        </form>
+    </body>
+</html>
